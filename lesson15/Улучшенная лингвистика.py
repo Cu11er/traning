@@ -10,14 +10,13 @@ for i in range(3):
     word = input()
     words_list.append(word)
 
-print(words_list)
-
 user_word = input('Слово из текста: ')
 while user_word != 'end':
     for index in range(3):
         if words_list[index] == user_word:
             count[index] += 1
     user_word = input('Слово из текста: ')
+
 print('Подсчет слов в тексте:\n')
 for i in range(3):
     print(words_list[i], ':', count[i])
