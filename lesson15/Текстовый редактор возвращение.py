@@ -16,11 +16,9 @@
 words = input('Введите строку: ')
 words_list = list(words)
 count = 0
-index = 0
-for i in words_list:
-    index += 1
-    if i  == ':':
-        words_list[index - 1] = ';'
+for index, letter in enumerate(words_list):
+    if letter == ':':
+        words_list[index] = ';'
         count += 1
 print('Измененная строка:', end=' ')
 for i in words_list:
