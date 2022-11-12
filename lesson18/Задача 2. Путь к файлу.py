@@ -12,7 +12,7 @@
 user_name = input('Введите имя пользователя: ')
 file_name = input('Введите имя файла: ')
 
-path = 'F:/{user}/docs/folder/{new_file}'.format(
+path = 'C:/{user}/docs/folder/{new_file}'.format(
     user=user_name,
     new_file=file_name
 )
