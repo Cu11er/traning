@@ -30,7 +30,6 @@ big_storage = {
 
 big_storage.update(small_storage)
 
-
 while True:
     input_item = input('Введите название товара: ')
     for item in big_storage.keys():
