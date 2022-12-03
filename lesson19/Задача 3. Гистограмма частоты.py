@@ -37,4 +37,5 @@ hist = histograme(text)
 for key in sorted(hist.keys()):
     print(key, ':', hist[key])
 
-print('Максимальная частота', max(hist.values())) # метод
+print('Максимальная частота', max(hist.values()))  # метод
+
