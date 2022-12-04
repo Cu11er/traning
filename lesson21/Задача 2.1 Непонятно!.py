@@ -21,6 +21,7 @@
 #     print('Неизменяемый (immutable)')
 # elif type(data) in (str, set, dict):
 #     print('Изменяемый (mutable)')
+
 data_names_dict = {
     "<class 'str'>": "строка",
     "<class 'dict'>": "словарь",
