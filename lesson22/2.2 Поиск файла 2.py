@@ -15,6 +15,7 @@ def find_file(cur_path, file_name):
     for i_elem in os.listdir(cur_path):
         path = os.path.join(cur_path, i_elem)
         if file_name == i_elem:
+            print('Найде файл')
             all_paths.append(os.path.abspath(path))
         elif os.path.isdir(path):
             result = find_file(path, file_name)
@@ -22,7 +23,6 @@ def find_file(cur_path, file_name):
                 all_paths.extend(result)
 
     return all_paths
-
 
 def chek_file(path_to_file):
     file = open(path_to_file, 'r', encoding='utf8')

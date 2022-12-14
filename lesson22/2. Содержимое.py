@@ -18,7 +18,7 @@ def print_dirs(project):
     else:
         print('Каталога проекта не существует.')
 
-folder_name = 'traning'
+folder_name = 'lesson18'
 
 abs_path = os.path.abspath(os.path.join('..', '..', folder_name))
 

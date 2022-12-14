@@ -15,7 +15,7 @@
 import os
 
 def search_file(dir, file):
-    # print('переходим', dir)
+    print('переходим', dir)
     for i_elem in os.listdir(dir):
         path = os.path.join(dir, i_elem)
         # print(path)

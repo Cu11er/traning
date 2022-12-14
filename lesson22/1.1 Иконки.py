@@ -32,7 +32,7 @@ def find_file(file):
         print('Указанного пути не существует')
 
 
-file = 'Шифр цезаря.py'  # название файла
+file = 'Отряды.py'  # название файла
 
 abs_path = os.path.abspath(os.path.join('..', 'lesson17', file))  # указываем правильный путь
 

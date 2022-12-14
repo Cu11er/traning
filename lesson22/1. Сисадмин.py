@@ -12,7 +12,7 @@ import os
 
 folder_name = 'access'
 file_name = 'admin.bat'
-rel_path = os.path.join('Skillbox', folder_name, file_name)
+rel_path = os.path.join('..', folder_name, file_name)
 abs_path = os.path.abspath(rel_path)
 
 print('Относительный путь до файла:', rel_path)
