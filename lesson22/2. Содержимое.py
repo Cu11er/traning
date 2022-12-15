@@ -20,7 +20,7 @@ def print_dirs(project):
 
 folder_name = 'lesson18'
 
-abs_path = os.path.abspath(os.path.join('..', '..', folder_name))
+abs_path = os.path.abspath(os.path.join('..', folder_name))
 
 
 print_dirs(abs_path)
