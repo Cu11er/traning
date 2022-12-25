@@ -18,12 +18,13 @@ def print_dirs(project):
     else:
         print('Каталога проекта не существует.')
 
-folder_name = 'lesson18'
-
-abs_path = os.path.abspath(os.path.join('..', folder_name))
-
-
-print_dirs(abs_path)
+try:
+    folder_name = 'lesson18'
+    abs_path = os.path.abspath(os.path.join('..', folder_name))
+except NameError as exc:
+    print(exc, type(exc), 'Ошибка работы программы')
+finally:
+    print_dirs(abs_path)
 
 
 
