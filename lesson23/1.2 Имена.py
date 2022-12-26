@@ -16,7 +16,6 @@ try:
         if line.endswith('\n'):
             length -= 1
         if length < 3:
-            print('Имя короче 3 символов')
             raise BaseException
         else:
             sum_sym += length
