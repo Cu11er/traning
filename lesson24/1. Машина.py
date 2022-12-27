@@ -5,23 +5,33 @@
 # максимальная скорость (200),
 # текущая скорость (ноль).
 # Создайте три экземпляра класса и каждому из них поменяйте значение текущей скорости на случайное число от нуля до 200
-import random
 
 class Toyota:
-    color = 'красный'
-    price = 1000000  # или 1e6
-    max_speed = 200
-    speed = 0
 
-car1 = Toyota()  # экземпляр класса
-car1.speed = random.randint(0, 200)
+    def __init__(self, color='red', price=1000000, max_speed=300, speed=60):
+        self.color = color
+        self.price = price
+        self.max_speed = max_speed
+        self.speed = speed
+
+    def info(self):
+        print(
+            'Color {}\nprice {}\nmax_speed {}\ncurrent speed {}\n'.format(
+            self.color, self.price, self.max_speed, self.speed
+            )
+        )
+
+    def curspeed(self, speed):
+        self.speed = speed
+
+
+car1 = Toyota('зеленый', 1200000, 270, 190)
+
+car1.info()
+car1.curspeed(210)
+car1.info()
 car2 = Toyota()
-car2.speed = random.randint(0, 200)
-car3 = Toyota()
-car3.speed = random.randint(0, 200)
+car2.info()
 
-print(car1.speed)
-print(car2.speed)
-print(car3.speed)
 
 
